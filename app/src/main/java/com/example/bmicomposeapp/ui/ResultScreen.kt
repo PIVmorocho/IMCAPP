@@ -45,5 +45,15 @@ fun ResultScreen(
         else       -> "Obesidad"    to Color.Red
     }
 
+    // ── Layout de resultados ─────────────────────────────────────────────────
+    Column(
+        modifier = Modifier
+            .fillMaxSize()
+            .padding(24.dp),
+        horizontalAlignment = Alignment.CenterHorizontally,
+        verticalArrangement = Arrangement.Center
+    ) {
 
+
+    }
 }
