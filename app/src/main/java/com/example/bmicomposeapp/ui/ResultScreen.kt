@@ -54,6 +54,21 @@ fun ResultScreen(
         verticalArrangement = Arrangement.Center
     ) {
 
+        Text(
+            text       = "Resultado",
+            fontSize   = 26.sp,
+            fontWeight = FontWeight.Bold
+        )
+
+        Spacer(modifier = Modifier.height(32.dp))
+
+        // Saludo personalizado con el nombre recibido por parámetro de navegación
+        Text(
+            text       = "Hola $nombre, tu resultado es:",
+            fontSize   = 20.sp,
+            fontWeight = FontWeight.Medium
+        )
+
 
     }
 }
