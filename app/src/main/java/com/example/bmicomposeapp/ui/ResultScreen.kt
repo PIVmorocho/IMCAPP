@@ -88,6 +88,21 @@ fun ResultScreen(
             color      = colorCategoria
         )
 
-        
+        Spacer(modifier = Modifier.height(40.dp))
+
+        // Botón "Volver": navega a "main" con popUpTo inclusive=true para recrear la pantalla
+        // y limpiar completamente el estado de los campos del formulario anterior.
+        Button(
+            onClick = {
+                navController.navigate("main") {
+                    popUpTo("main") { inclusive = true }
+                }
+            },
+            modifier = Modifier
+                .fillMaxWidth()
+                .height(50.dp)
+        ) {
+            Text("Volver", fontSize = 16.sp)
+        }
     }
 }
