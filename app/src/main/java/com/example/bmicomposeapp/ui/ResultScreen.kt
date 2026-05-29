@@ -69,6 +69,25 @@ fun ResultScreen(
             fontWeight = FontWeight.Medium
         )
 
+        Spacer(modifier = Modifier.height(16.dp))
 
+        // Valor del IMC formateado a exactamente un decimal ("%.1f")
+        Text(
+            text       = "IMC: ${"%.1f".format(imc)}",
+            fontSize   = 48.sp,
+            fontWeight = FontWeight.Bold
+        )
+
+        Spacer(modifier = Modifier.height(12.dp))
+
+        // Categoría con color dinámico definido por la expresión 'when' anterior
+        Text(
+            text       = categoria,
+            fontSize   = 22.sp,
+            fontWeight = FontWeight.SemiBold,
+            color      = colorCategoria
+        )
+
+        
     }
 }
